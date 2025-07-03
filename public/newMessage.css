@@ -7,8 +7,10 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px;
+    text-align: center;
 }
 
 form {
@@ -39,4 +41,11 @@ form {
 
 form > button {
     width: 300px;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
