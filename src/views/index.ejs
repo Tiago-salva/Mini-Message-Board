@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <button><a href="/new">Add a message!</a></button>
+        <ul>
+            <% messages.forEach(message => { %>
+                <li><p><%= message.user %></p> </li>
+                <li><p><%= message.text %></p> </li>
+                <li><p><%= message.added %></p> </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
