@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+button {
+    width: 200px;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+li {
+    font-size: 1.3rem;
+}
+
+li > p:nth-of-type(2) {
+    font-size: 0.9rem;
+}
