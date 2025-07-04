@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Message detail</title>
+        <link rel="stylesheet" href="/messageDetail.css">
+    </head>
+    <body>
+        <h1>Message Details</h1>
+        <ul>
+            <li><strong>User:</strong> <%= message.user %></li>
+            <li><strong>Message:</strong> <%= message.text %></li>
+            <li><strong>Posted at:</strong> <%= new Date(message.added).toLocaleString("es-AR") %></li>
+        </ul>
+        <a href="/">Back to the messages</a>
+    </body>
+</html>
