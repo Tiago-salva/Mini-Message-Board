@@ -5,7 +5,7 @@ const newMessageRouter = require("./src/routes/newMessageRouter");
 const messageDetailsRouter = require("./src/routes/messageDetailRouter");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const assetsPath = path.join(__dirname, "public");
 
 app.set("views", path.join(__dirname, "src", "views"));
