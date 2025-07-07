@@ -7,6 +7,7 @@ const messages = [
 
 indexRouter.get("/", (req, res) => {
   res.render("index", { title: "Mini Messageboard", messages: messages });
+  res.send("¡Tu app está corriendo en Railway!");
 });
 
 indexRouter.post("/new", (req, res) => {
