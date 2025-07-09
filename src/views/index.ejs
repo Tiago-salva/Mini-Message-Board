@@ -10,11 +10,12 @@
             <% messages.forEach(message => { %>
             <li>
                 <p>
-                    <strong><%= message.user %>:</strong>
+                    <strong><%= message.username %>:</strong>
                     <%= message.text %>
                 </p>
                 <p><%= new Date(message.added).toLocaleString("es-AR") %></p>
                 <a href="/message/<%= message.id %>">Open</a>
+                <a href="/delete/<%= message.id %>">Delete</a>
             </li>
             <% }); %>
         </ul>
