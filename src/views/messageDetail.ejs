@@ -1,12 +1,12 @@
 <html>
     <head>
-        <title>Message detail</title>
+        <title><%= title %></title>
         <link rel="stylesheet" href="/messageDetail.css">
     </head>
     <body>
-        <h1>Message Details</h1>
+        <h1><%= title %></h1>
         <ul>
-            <li><strong>User:</strong> <%= message.user %></li>
+            <li><strong>User:</strong> <%= message.username %></li>
             <li><strong>Message:</strong> <%= message.text %></li>
             <li><strong>Posted at:</strong> <%= new Date(message.added).toLocaleString("es-AR") %></li>
         </ul>
